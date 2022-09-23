@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Microblog</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <header><h1>Microblog</h1></header>
+    <main>
+      <label for="message">What do you want to post?</label>
+      <textarea id="message"></textarea>
+      <div>
+        <label for="opt">OPT:</label>
+        <input id="opt"></input>
+        <button id="post">POST</button>&nbsp;<span id="error"></span>
+      </div>
+      <div>
+        <label for="set">Set Name:</label>
+        <input id="set"></input>
+        <button id="btn_set">SET</button>&nbsp;<span id="set_error"></span>
+      </div>
+      <div>
+        <label for="follow">Canister:</label>
+        <input id="follow"></input>
+        <button id="btn_follow">Follow</button>&nbsp;<span id="follow_error"></span>
+      </div>
+      <div style="float:left">
+        Authors List:
+        <ul id="author_list" style="padding-left: 0;"></ul>
+      </div>
+      <div style="float:right">
+        Posts:
+        <section id="posts"></section>
+      </div>
+    </main>
+  </body>
+</html>
